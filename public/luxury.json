@@ -1,0 +1,105 @@
+[
+  {
+    "image": "https://example.com/private_island1.jpg",
+    "estate_title": "Luxury Private Island Retreat",
+    "id": "01",
+    "segment_name": "private island",
+    "description": "Escape to your own paradise with this luxury private island retreat. Surrounded by crystal-clear waters and pristine beaches, it offers unparalleled privacy and tranquility.",
+    "price": "10,000,000",
+    "status": "sale",
+    "area": "20000 sq ft",
+    "location": "Tropical Island, Caribbean",
+    "facilities": ["private beach", "luxury villa", "infinity pool"]
+  },
+  {
+    "image": "https://example.com/private_island3.jpg",
+    "estate_title": "Exotic Island Paradise",
+    "id": "02",
+    "segment_name": "private island",
+    "description": "Experience the ultimate luxury in this exotic island paradise. With pristine beaches, lush landscapes, and stunning ocean views, it's a dream destination for discerning travelers.",
+    "price": "15,000,000",
+    "status": "sale",
+    "area": "50000 sq ft",
+    "location": "Island Archipelago, Indian Ocean",
+    "facilities": ["luxury resort", "private villas", "infinity pools"]
+  },
+  {
+    "image": "https://example.com/beachfront_property1.jpg",
+    "estate_title": "Luxury Beachfront Villa",
+    "id": "03",
+    "segment_name": "beachfront properties",
+    "description": "Indulge in the epitome of luxury living with this exquisite beachfront villa. Boasting stunning ocean views and direct access to pristine sands, it offers a lifestyle of unparalleled elegance.",
+    "price": "15,000/month",
+    "status": "rent",
+    "area": "5000 sq ft",
+    "location": "Sandy Cove, California",
+    "facilities": ["oceanfront terrace", "private beach access", "infinity pool"]
+  },{
+    "image": "https://example.com/penthouse1.jpg",
+    "estate_title": "Luxury City Penthouse",
+    "id": "04",
+    "segment_name": "Penthouse",
+    "description": "Experience urban luxury living at its finest with this stunning city penthouse. Offering breathtaking views of the skyline and top-of-the-line amenities, it's the epitome of sophistication.",
+    "price": "3,500,000",
+    "status": "sale",
+    "area": "3000 sq ft",
+    "location": "Downtown Metropolis, USA",
+    "facilities": ["private rooftop terrace", "infinity pool", "home theater"]
+  },{
+    "image": "https://example.com/penthouse2.jpg",
+    "estate_title": "Modern Beachfront Penthouse",
+    "id": "05",
+    "segment_name": "Penthouse",
+    "description": "Live in luxury by the sea with this modern beachfront penthouse. Featuring panoramic ocean views and contemporary design, it's an oasis of tranquility amidst the coastal beauty.",
+    "price": "2,800/month",
+    "status": "rent",
+    "area": "2500 sq ft",
+    "location": "Coastal Paradise, California",
+    "facilities": ["private balcony", "beach access", "gourmet kitchen"]
+  },{
+    "image": "https://example.com/mansion1.jpg",
+    "estate_title": "Grand Lakeside Mansion",
+    "id": "06",
+    "segment_name": "Mansions",
+    "description": "Experience opulent living in this grand lakeside mansion. Set amidst sprawling grounds and offering panoramic views of the water, it's a masterpiece of luxury and elegance.",
+    "price": "10,700,000",
+    "status": "sale",
+    "area": "15,000 sq ft",
+    "location": "Lakefront Estates, USA",
+    "facilities": ["home theater", "indoor pool", "tennis court"]
+  },{
+    "image": "https://example.com/villa2.jpg",
+    "estate_title": "Modern Hillside Villa",
+    "id": "07",
+    "segment_name": "Villas",
+    "description": "Experience contemporary luxury with this modern hillside villa. Perched high above the city, it offers stunning views, sleek design, and a serene atmosphere for relaxation.",
+    "price": "3,500,000",
+    "status": "sale",
+    "area": "4000 sq ft",
+    "location": "Hilltop Retreat, USA",
+    "facilities": ["rooftop terrace", "private gym", "home theater"]
+  },
+  {
+    "image": "https://example.com/villa1.jpg",
+    "estate_title": "Luxurious Oceanfront Villa",
+    "id": "08",
+    "segment_name": "Villas",
+    "description": "Escape to luxury with this stunning oceanfront villa. Featuring breathtaking views, exquisite design, and top-of-the-line amenities, it offers the ultimate coastal living experience.",
+    "price": "20,000/month",
+    "status": "rent",
+    "area": "5000 sq ft",
+    "location": "Coastal Haven, California",
+    "facilities": ["private beach access", "infinity pool", "gourmet kitchen"]
+  },{
+    "image": "https://example.com/resort2.jpg",
+    "estate_title": "Mountain Retreat Resort",
+    "id": "09",
+    "segment_name": "resorts",
+    "description": "Experience tranquility amidst nature with this mountain retreat resort. Nestled in the heart of the mountains, it offers breathtaking views and outdoor adventures.",
+    "price": "15,000,000",
+    "status": "rent",
+    "area": "50000 sq ft",
+    "location": "Alpine Wilderness, Europe",
+    "facilities": ["luxury chalets", "ski slopes access", "mountain spa"]
+  }
+]
