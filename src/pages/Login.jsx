@@ -1,13 +1,30 @@
 import { Link } from "react-router-dom";
 import Navbar from "./shared/navbar/Navbar";
-
+import { FaFacebook, FaGithub, FaTwitter } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../providers/AuthProvider";
+import Footer from "./shared/footer/Footer";
 const Login = () => {
+  const { signIn } = useContext(AuthContext);
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+    signIn(email, password)
+    .then((result) => {
+      console.log(result.user);
+    })
+    .catch((error) => {
+      console.error(error);
+    })
+  };
   return (
     <div className="max-w-7xl mx-auto">
-        <Navbar></Navbar>
+      <Navbar></Navbar>
       <div className="bg-base-200 md:p-24 mt-10">
         <h1 className="text-2xl font-bold text-center">Login your account</h1>
-        <form class="card-body md:w-3/5 mx-auto">
+        <form onSubmit={handleLogin} class="card-body md:w-3/5 mx-auto">
           <div class="form-control">
             <label class="label">
               <span class="label-text font-semibold">Email</span>
@@ -47,7 +64,19 @@ const Login = () => {
             Register
           </Link>
         </p>
+        <div className="flex mt-8 gap-16 ml-96">
+          <button className="border-2 text-3xl p-4 rounded-lg ">
+            <FaFacebook />
+          </button>
+          <button className="border-2 text-3xl p-4 rounded-lg ">
+            <FaGithub />
+          </button>
+          <button className="border-2 text-3xl p-4 rounded-lg">
+            <FaTwitter />
+          </button>
+        </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

@@ -1,14 +1,25 @@
-import Cards from "./Cards";
+import { useLoaderData } from "react-router-dom";
 import Banner from "./shared/banner/Banner";
 import Navbar from "./shared/navbar/Navbar";
+import SellCards from "./SellCards";
+import Footer from "./shared/footer/Footer";
 
 
 const Home = () => {
+    const cards = useLoaderData()
     return (
         <div className="max-w-7xl mx-auto">
             <Navbar></Navbar>
             <Banner></Banner>
-            <Cards></Cards>
+            <div className="text-center mt-8">
+                <h1 className="text-4xl font-semibold">Our Sale and Rent Property</h1>
+            </div>
+            <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
+                {
+                    cards.map(aCards =><SellCards key={aCards.id} cards={aCards}></SellCards>)
+                }
+            </div>
+            <Footer></Footer>
         </div>
     );
 };

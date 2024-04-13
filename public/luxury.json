@@ -102,7 +102,7 @@
     "segment_name": "resorts",
     "description": "Experience tranquility amidst nature with this mountain retreat resort. Nestled in the heart of the mountains, it offers breathtaking views and outdoor adventures.",
     "price": "15,000,000",
-    "status": "rent",
+    "status": "sale",
     "area": "50000 sq ft",
     "location": "Alpine Wilderness, Europe",
     "facilities": ["luxury chalets", "ski slopes access", "mountain spa"]

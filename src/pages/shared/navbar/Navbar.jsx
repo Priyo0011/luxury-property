@@ -1,6 +1,14 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const Navbar = () => {
+    const {user, logOut} = useContext(AuthContext);
+    const handleSignOut = () =>{
+      logOut()
+      .then()
+      .catch()
+    }
   const navLinks = (
     <>
       <li>
@@ -16,7 +24,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-sky-50">
+      <div className="navbar bg-gray-100">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,7 +51,7 @@ const Navbar = () => {
             </ul>
           </div>
           <a className="text-xl font-bold text-gray-500">
-            Park<span className="text-sky-400">Co</span>
+            Park<span className="text-sky-400">Luxury</span>
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -62,11 +70,18 @@ const Navbar = () => {
               />
             </div>
           </div>
-          <Link to="/login">
+          {
+            user ?
+            <button onClick={handleSignOut} className="py-2 px-4 bg-gray-800 rounded-lg text-sm text-gray-200">
+              Sign Out
+            </button>
+            :
+            <Link to="/login">
             <button className="py-2 px-4 bg-gray-800 rounded-lg text-sm text-gray-200">
               Login
             </button>
           </Link>
+          }
         </div>
       </div>
     </div>
