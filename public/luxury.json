@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://example.com/private_island1.jpg",
+    "image": "https://i.ibb.co/PjwJW3d/id-01.jpg",
     "estate_title": "Luxury Private Island Retreat",
     "id": "01",
     "segment_name": "private island",
@@ -12,7 +12,7 @@
     "facilities": ["private beach", "luxury villa", "infinity pool"]
   },
   {
-    "image": "https://example.com/private_island3.jpg",
+    "image": "https://i.ibb.co/NywXf4D/id-02.jpg",
     "estate_title": "Exotic Island Paradise",
     "id": "02",
     "segment_name": "private island",
@@ -24,7 +24,7 @@
     "facilities": ["luxury resort", "private villas", "infinity pools"]
   },
   {
-    "image": "https://example.com/beachfront_property1.jpg",
+    "image": "https://i.ibb.co/108HVNg/id-03.jpg",
     "estate_title": "Luxury Beachfront Villa",
     "id": "03",
     "segment_name": "beachfront properties",
@@ -34,8 +34,9 @@
     "area": "5000 sq ft",
     "location": "Sandy Cove, California",
     "facilities": ["oceanfront terrace", "private beach access", "infinity pool"]
-  },{
-    "image": "https://example.com/penthouse1.jpg",
+  },
+  {
+    "image": "https://i.ibb.co/9HWzd2L/id-04.jpg",
     "estate_title": "Luxury City Penthouse",
     "id": "04",
     "segment_name": "Penthouse",
@@ -45,8 +46,9 @@
     "area": "3000 sq ft",
     "location": "Downtown Metropolis, USA",
     "facilities": ["private rooftop terrace", "infinity pool", "home theater"]
-  },{
-    "image": "https://example.com/penthouse2.jpg",
+  },
+  {
+    "image": "https://i.ibb.co/NVPYBS7/id-05.jpg",
     "estate_title": "Modern Beachfront Penthouse",
     "id": "05",
     "segment_name": "Penthouse",
@@ -56,8 +58,9 @@
     "area": "2500 sq ft",
     "location": "Coastal Paradise, California",
     "facilities": ["private balcony", "beach access", "gourmet kitchen"]
-  },{
-    "image": "https://example.com/mansion1.jpg",
+  },
+  {
+    "image": "https://i.ibb.co/f1tLf3G/id-06.jpg",
     "estate_title": "Grand Lakeside Mansion",
     "id": "06",
     "segment_name": "Mansions",
@@ -67,8 +70,9 @@
     "area": "15,000 sq ft",
     "location": "Lakefront Estates, USA",
     "facilities": ["home theater", "indoor pool", "tennis court"]
-  },{
-    "image": "https://example.com/villa2.jpg",
+  },
+  {
+    "image": "https://i.ibb.co/HKChnhD/id-07.jpg",
     "estate_title": "Modern Hillside Villa",
     "id": "07",
     "segment_name": "Villas",
@@ -80,7 +84,7 @@
     "facilities": ["rooftop terrace", "private gym", "home theater"]
   },
   {
-    "image": "https://example.com/villa1.jpg",
+    "image": "https://i.ibb.co/YTrKt42/id-08.jpg",
     "estate_title": "Luxurious Oceanfront Villa",
     "id": "08",
     "segment_name": "Villas",
@@ -90,8 +94,9 @@
     "area": "5000 sq ft",
     "location": "Coastal Haven, California",
     "facilities": ["private beach access", "infinity pool", "gourmet kitchen"]
-  },{
-    "image": "https://example.com/resort2.jpg",
+  },
+  {
+    "image": "https://i.ibb.co/9shBchY/id-09.jpg",
     "estate_title": "Mountain Retreat Resort",
     "id": "09",
     "segment_name": "resorts",
