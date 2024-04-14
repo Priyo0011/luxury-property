@@ -1,8 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "./shared/banner/Banner";
 import Navbar from "./shared/navbar/Navbar";
-import SellCards from "./SellCards";
+
 import Footer from "./shared/footer/Footer";
+import SaleCards from "./SaleCards";
 
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
             </div>
             <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
                 {
-                    cards.map(aCards =><SellCards key={aCards.id} cards={aCards}></SellCards>)
+                    cards.map(aCards =><SaleCards key={aCards.id} cards={aCards}></SaleCards>)
                 }
             </div>
             <Footer></Footer>
