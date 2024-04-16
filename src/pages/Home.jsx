@@ -4,6 +4,7 @@ import Navbar from "./shared/navbar/Navbar";
 
 import Footer from "./shared/footer/Footer";
 import SaleCards from "./SaleCards";
+import OurTeam from "../components/OurTeam";
 
 
 const Home = () => {
@@ -19,6 +20,9 @@ const Home = () => {
                 {
                     cards.map(aCards =><SaleCards key={aCards.id} cards={aCards}></SaleCards>)
                 }
+            </div>
+            <div className="mt-10">
+            <OurTeam></OurTeam>
             </div>
             <Footer></Footer>
         </div>

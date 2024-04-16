@@ -12,7 +12,7 @@ import {
   FacebookAuthProvider,
   GithubAuthProvider,
   GoogleAuthProvider,
-} from "firebase/auth/cordova";
+} from "firebase/auth";
 
 export const AuthContext = createContext(null);
 const auth = getAuth(app);
