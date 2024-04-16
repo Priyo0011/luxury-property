@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import Navbar from "./shared/navbar/Navbar";
-import { FaFacebook, FaGithub, FaTwitter } from "react-icons/fa";
-import { useContext } from "react";
-import { AuthContext } from "../providers/AuthProvider";
+import { FaEye,FaEyeSlash } from "react-icons/fa";
 import Footer from "./shared/footer/Footer";
+import useAuth from "../hooks/useAuth";
+import SocialLogin from "./SocialLogin";
+import { useState } from "react";
 const Login = () => {
-  const { signIn } = useContext(AuthContext);
+  const { signIn } = useAuth;
+  const [showPassword, setShowPassword] = useState(false);
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -37,19 +39,29 @@ const Login = () => {
               required
             />
           </div>
-          <div class="form-control">
-            <label class="label">
-              <span class="label-text font-semibold">Password</span>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text font-semibold">Password</span>
             </label>
-            <input
-              type="password"
+            <div className="relative">
+              <input
+              type={showPassword? "text":"password"}
+              required
               name="password"
               placeholder="Enter your password"
-              class="input input-bordered"
-              required
+              className="input input-bordered w-full"             
             />
-            <label class="label">
-              <a href="#" class="label-text-alt link link-hover font-medium">
+            <span className="absolute top-4 right-4" onClick={() => setShowPassword(!showPassword)}>
+              {
+                showPassword? <FaEye /> : <FaEyeSlash />
+              }
+            </span>
+            </div>
+            <label className="label">
+              <a
+                href="#"
+                className="label-text-alt link link-hover font-medium"
+              >
                 Forgot password?
               </a>
             </label>
@@ -64,17 +76,7 @@ const Login = () => {
             Register
           </Link>
         </p>
-        <div className="flex mt-8 gap-16 ml-96">
-          <button className="border-2 text-3xl p-4 rounded-lg ">
-            <FaFacebook />
-          </button>
-          <button className="border-2 text-3xl p-4 rounded-lg ">
-            <FaGithub />
-          </button>
-          <button className="border-2 text-3xl p-4 rounded-lg">
-            <FaTwitter />
-          </button>
-        </div>
+        <SocialLogin></SocialLogin>
       </div>
       <Footer></Footer>
     </div>

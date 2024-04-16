@@ -3,9 +3,11 @@ import Root from "../layouts/Root";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
-
 import Detail from "../pages/Detail";
 import ErrorPage from "../pages/ErrorPage";
+import PrivateRoute from "../components/PrivateRoute";
+import UpProfile from "../components/UpProfile";
+import Contact from "../components/Contact";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,9 @@ const router = createBrowserRouter([
       },
       {
         path:'/detail/:id',
-        element:<Detail></Detail>,
+        element:<PrivateRoute>
+          <Detail></Detail>
+        </PrivateRoute>,
         loader: () => fetch('../luxury.json')
       },
       {
@@ -31,6 +35,18 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
+      {
+        path: "/update-profile",
+        element: <UpProfile></UpProfile>,
+      },
+      {
+        path: "contact-us",
+        element: <PrivateRoute>
+          <Contact></Contact>
+        </PrivateRoute>,
+      },
+      
+      
     ],
   },
 ]);

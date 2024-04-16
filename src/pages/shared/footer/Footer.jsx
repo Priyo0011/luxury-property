@@ -10,7 +10,6 @@ const Footer = () => {
         <nav>
           <div className="flex flex-col justify-center pt-4 lg:pt-0">
             <div className="flex items-center justify-center space-x-4">
-            <p className="uppercase">Social media :</p>
               <a
                 rel="noopener noreferrer"
                 href="#"

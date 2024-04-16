@@ -1,16 +1,15 @@
 import { Link } from "react-router-dom";
 import Navbar from "./shared/navbar/Navbar";
-import { useContext } from "react";
-import { AuthContext } from "../providers/AuthProvider";
 import Footer from "./shared/footer/Footer";
-
+import useAuth from "../hooks/useAuth";
+import { useState } from "react";
+import { FaEye,FaEyeSlash } from "react-icons/fa";
 const Register = () => {
-    const {createUser}= useContext(AuthContext)
+    const {createUser}= useAuth();
+    const [showPass, setShowPass]= useState(false);
   const handleRegister = (e) => {
     e.preventDefault();
-
     const form = new FormData(e.currentTarget);
-
     const name = form.get("name");
     const photo = form.get("photo");
     const email = form.get("email");
@@ -70,13 +69,20 @@ const Register = () => {
             <label className="label">
               <span className="label-text font-semibold">Password</span>
             </label>
-            <input
-              type="password"
+            <div className="relative">
+              <input
+              type={showPass? "text":"password"}
               required
               name="password"
               placeholder="Enter your password"
-              className="input input-bordered"
+              className="input input-bordered w-full"             
             />
+            <span className="absolute top-4 right-4" onClick={() => setShowPass(!showPass)}>
+              {
+                showPass? <FaEye /> : <FaEyeSlash />
+              }
+            </span>
+            </div>
             <label className="label">
               <a
                 href="#"
