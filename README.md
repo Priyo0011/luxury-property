@@ -1,9 +1,9 @@
 # live link :
 -    https://luxury-property-f726b.web.app
 # Features:
-- Extensive database of available scholarships categorized by various criteria such as merit, need, and field of study. 
-- Users can apply for multiple scholarships through a single, unified platform.
-- Tracks the status of applications and sends notifications for updates.
+- Facilitates easy discovery of luxury properties based on client preferences. 
+- Streamlines the selling process of luxury real estate.
+- Enhances client engagement through detailed property listings and seamless transaction management.
 
 # How to run localhost:
 - git clone (past copylink)
